@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g fill="#fff">
+    <circle cx="4" cy="12" r="0.55" opacity=".52"/><circle cx="18" cy="3" r=".4" opacity=".35"/><circle cx="29" cy="22" r=".65" opacity=".25"/>
+    <circle cx="42" cy="7" r=".35" opacity=".56"/><circle cx="57" cy="15" r=".5" opacity=".3"/><circle cx="71" cy="4" r=".7" opacity=".22"/>
+    <circle cx="89" cy="19" r=".45" opacity=".48"/><circle cx="105" cy="8" r=".55" opacity=".2"/><circle cx="116" cy="27" r=".35" opacity=".62"/>
+    <circle cx="9" cy="39" r=".35" opacity=".34"/><circle cx="23" cy="55" r=".6" opacity=".19"/><circle cx="38" cy="41" r=".45" opacity=".54"/>
+    <circle cx="51" cy="61" r=".5" opacity=".24"/><circle cx="67" cy="36" r=".35" opacity=".5"/><circle cx="78" cy="53" r=".7" opacity=".18"/>
+    <circle cx="96" cy="47" r=".45" opacity=".42"/><circle cx="111" cy="66" r=".55" opacity=".28"/><circle cx="3" cy="75" r=".5" opacity=".22"/>
+    <circle cx="17" cy="91" r=".4" opacity=".54"/><circle cx="31" cy="72" r=".65" opacity=".18"/><circle cx="45" cy="86" r=".35" opacity=".46"/>
+    <circle cx="61" cy="103" r=".55" opacity=".24"/><circle cx="76" cy="81" r=".4" opacity=".58"/><circle cx="90" cy="98" r=".7" opacity=".18"/>
+    <circle cx="108" cy="84" r=".45" opacity=".38"/><circle cx="117" cy="111" r=".35" opacity=".57"/><circle cx="6" cy="116" r=".6" opacity=".2"/>
+    <circle cx="28" cy="108" r=".35" opacity=".5"/><circle cx="48" cy="116" r=".5" opacity=".24"/><circle cx="99" cy="116" r=".55" opacity=".4"/>
+  </g>
+</svg>

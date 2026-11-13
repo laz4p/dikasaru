@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>portfolio</title>
+  <meta name="description" content="Точечное поле, интерактивные буквы и управление светом">
+  <link rel="icon" type="image/svg+xml" href="assets/avatar-icon.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/site-effects.js"></script>
+  <script defer src="assets/site-runtime.js"></script>
+</head>
+<body data-palette="1" data-glow="28 70 65" class="v2 v35">
+  <div class="ambient" aria-hidden="true"></div>
+  <main class="v-wrap">
+    <header class="v-header">
+      <a href="index.html" class="v-brand">portfolio</a>
+      <nav>
+        <div class="theme-picker">
+          <button class="theme-toggle" aria-label="Выбрать цветовую тему" aria-expanded="false" aria-controls="theme-menu"><span></span></button>
+          <div id="theme-menu" class="theme-menu" inert>
+            <span class="theme-caption">Цвет сайта</span>
+            <button aria-label="Graphite" title="Graphite" data-theme="1" aria-pressed="true"><i></i></button>
+            <button aria-label="Розовая" title="Розовая" data-theme="2" aria-pressed="false"><i></i></button>
+            <button aria-label="Зелёная" title="Зелёная" data-theme="3" aria-pressed="false"><i></i></button>
+            <button aria-label="Синяя" title="Синяя" data-theme="4" aria-pressed="false"><i></i></button>
+            <button aria-label="Красная" title="Красная" data-theme="5" aria-pressed="false"><i></i></button>
+            <button class="sound-toggle" aria-pressed="true">Звуки включены</button>
+          </div>
+        </div>
+        <a href="#works">Работы <small>07</small></a>
+        <a class="contact-link" href="https://t.me/dikasaru" target="_blank" rel="noopener">Telegram<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.4 3.3 18 20c-.3 1.2-1 1.5-2 .9l-5.2-3.8-2.5 2.4c-.3.3-.5.5-1 .5l.4-5.3 9.6-8.7c.4-.4-.1-.6-.6-.3L4.8 13.2.8 11.9c-1.1-.3-1.1-1.1.2-1.6L19.6 2.4c1-.4 2 .2 1.8.9Z"/></svg></a>
+      </nav>
+    </header>
+
+    <section class="render-heading">
+      <div>
+        <h1 class="sr-only">dikasaru — дизайн и разработка сайтов</h1>
+        <div class="tech-wrap" data-tech="dikasaru" data-accent="#c3f66b" aria-label="dikasaru"><span>dikasaru</span></div>
+      </div>
+      <div class="render-note"><p>На этом сайте можно посмотреть на мои работы. Следующая - может быть ваша :)</p></div>
+    </section>
+
+    <section class="render-room" id="works">
+      <div class="rays-window"><div data-rays></div></div>
+      <div class="folder-array">
+        <details class="project-folder">
+          <summary aria-label="Открыть папку Аниме-лист">
+            <span class="folder-back"></span>
+            <span class="folder-front"><small>01 / WEBSITE</small></span>
+            <span class="folder-label"><b>Аниме-лист</b><span>Журнал просмотра</span></span>
+          </summary>
+          <a class="folder-paper" href="projects/dikasaru/index.html" data-open="dikasaru" data-title="Аниме-лист">
+            <img src="assets/dikasaru-preview.png" width="1380" height="946" alt="Аниме-лист с названиями и оценками в трёх колонках" loading="lazy">
+            <span>Открыть сайт</span>
+          </a>
+        </details>
+
+        <details class="project-folder">
+          <summary aria-label="Открыть папку Sqwore">
+            <span class="folder-back"></span>
+            <span class="folder-front"><small>02 / WEBSITE</small></span>
+            <span class="folder-label"><b>Sqwore</b><span>Сайт концерта</span></span>
+          </summary>
+          <a class="folder-paper" href="projects/sqwore/index.html" data-open="sqwore" data-title="Sqwore">
+            <img src="assets/sqwore-preview.png" width="1200" height="840" alt="Главная страница сайта концерта Sqwore" loading="lazy">
+            <span>Открыть сайт ↗</span>
+          </a>
+        </details>
+
+        <details class="project-folder">
+          <summary aria-label="Открыть папку Cardi">
+            <span class="folder-back"></span>
+            <span class="folder-front"><small>03 / WEBSITE</small></span>
+            <span class="folder-label"><b>Cardi</b><span>Криптокошелёк и карта</span></span>
+          </summary>
+          <a class="folder-paper" href="projects/cardi/index.html" data-open="cardi" data-title="Cardi">
+            <img src="assets/cardi-preview.png" width="1440" height="900" alt="Главный экран приложения Cardi" loading="lazy">
+            <span>Открыть сайт</span>
+          </a>
+        </details>
+
+        <details class="project-folder">
+          <summary aria-label="Открыть папку Tattoo YO">
+            <span class="folder-back"></span>
+            <span class="folder-front"><small>04 / WEBSITE</small></span>
+            <span class="folder-label"><b>Tattoo YO</b><span>Сайт тату-мастера</span></span>
+          </summary>
+          <a class="folder-paper" href="projects/tattooyo/index.html" data-open="tattooyo" data-title="Tattoo YO">
+            <img src="assets/tattooyo-preview.png" width="1200" height="840" alt="Раздел с работами Tattoo YO" loading="lazy">
+            <span>Открыть сайт ↗</span>
+          </a>
+        </details>
+
+        <details class="project-folder">
+          <summary aria-label="Открыть папку Пудели">
+            <span class="folder-back"></span>
+            <span class="folder-front"><small>05 / WEBSITE</small></span>
+            <span class="folder-label"><b>Пудели</b><span>Сайт о щенках</span></span>
+          </summary>
+          <a class="folder-paper" href="projects/pudel/index.html" data-open="pudel" data-title="Пудели">
+            <img src="assets/pudel-preview.png" width="1200" height="840" alt="Главная страница сайта «Пудели»" loading="lazy">
+            <span>Открыть сайт ↗</span>
+          </a>
+        </details>
+
+        <details class="project-folder">
+          <summary aria-label="Открыть папку Vorn">
+            <span class="folder-back"></span>
+            <span class="folder-front"><small>06 / WEBSITE</small></span>
+            <span class="folder-label"><b>Vorn</b><span>Ювелирный магазин</span></span>
+          </summary>
+          <a class="folder-paper" href="projects/yuvelir/index.html" data-open="yuvelir" data-title="Vorn">
+            <img src="assets/yuvelir-preview.png" width="1200" height="840" alt="Главная страница ювелирного магазина Vorn" loading="lazy">
+            <span>Открыть сайт ↗</span>
+          </a>
+        </details>
+
+        <details class="project-folder">
+          <summary aria-label="Открыть папку Стимул">
+            <span class="folder-back"></span>
+            <span class="folder-front"><small>07 / WEBSITE</small></span>
+            <span class="folder-label"><b>Стимул</b><span>Сайт спортклуба</span></span>
+          </summary>
+          <a class="folder-paper" href="https://stimul.lazap5yt.workers.dev/" data-open="stimul" data-title="Стимул">
+            <img src="assets/stimul-preview.png" width="1200" height="840" alt="Главная страница спортклуба «Стимул»" loading="lazy">
+            <span>Открыть сайт ↗</span>
+          </a>
+        </details>
+        <div class="project-folder empty-folder" aria-label="Место для будущего проекта 8">
+          <span class="folder-back"></span>
+          <span class="folder-front"><small>08 / SOON</small></span>
+          <span class="folder-label"><b>Следующая работа</b><span>Может быть ваша</span></span>
+        </div>
+      </div>
+      <span class="render-room-note micro">Откройте папку, чтобы посмотреть проект.</span>
+    </section>
+
+    <footer class="site-footer">
+      <div data-contact></div>
+      <p class="footer-credit">Дизайн и разработка — dikasaru.</p>
+    </footer>
+  </main>
+
+  <dialog class="preview">
+    <div class="preview-head">
+      <strong id="modal-title">Демопроект</strong>
+      <div><a data-external target="_blank" rel="noopener">Открыть отдельно</a><button data-close aria-label="Закрыть просмотр">×</button></div>
+    </div>
+    <iframe title="Просмотр демосайта"></iframe>
+  </dialog>
+</body>
+</html>

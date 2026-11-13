@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ru" data-type="software" data-radius="round" data-buttons="pill" data-motion="live">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="theme-color" content="#f7f9f8">
+  <meta name="description" content="Cardi, демо-концепт приложения с отдельным хранилищем активов и счётом для повседневных трат.">
+  <meta property="og:title" content="Cardi: криптокошелёк и карта">
+  <meta property="og:description" content="Два счёта в одном приложении: хранение активов и повседневные платежи.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Cardi: криптокошелёк и карта</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400..700&family=Funnel+Sans:wght@400..600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Software / teal-on-paper / Funnel / split reference-led hero / nav-mega / footer-dark / close-word / dark-band / pill / wordmark -->
+  <header class="nav" data-nav>
+    <div class="wrap nav__inner">
+      <a class="skip-link" href="#top">Перейти к содержанию</a>
+      <a class="brand" href="#top" aria-label="Cardi, на главную">Cardi</a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="#product">Продукт</a>
+        <a href="#why">Почему Cardi</a>
+        <a href="#technology">Технологии</a>
+      </nav>
+      <a class="button button--small" href="#join">Оставить заявку</a>
+      <button class="nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <a href="#product">Продукт</a>
+      <a href="#why">Почему Cardi</a>
+      <a href="#technology">Технологии</a>
+      <a class="button" href="#join">Оставить заявку</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy" data-enter-copy>
+          <h1 id="hero-title"><span>Криптокошелёк</span><span>и карта Cardi</span></h1>
+          <p>Два счёта в одном приложении: храните активы отдельно, переводите нужную сумму и платите картой.</p>
+          <form class="lead-form" data-demo-form novalidate>
+            <label class="sr-only" for="hero-email">Электронная почта</label>
+            <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Ваша почта" required aria-describedby="hero-email-error">
+            <button type="submit">Оставить заявку</button>
+            <span class="field-error" id="hero-email-error"></span>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="hero-assets" aria-label="Поддерживаемые активы">
+            <div class="hero-assets__icons" aria-hidden="true">
+              <span><img data-icon="bitcoin" src="assets/icons/bitcoin.svg" alt=""></span>
+              <span><img data-icon="ethereum" src="assets/icons/ethereum.svg" alt=""></span>
+              <span><img data-icon="si:tether" src="assets/icons/tether.svg" alt=""></span>
+              <span><img data-icon="si:solana" src="assets/icons/solana.svg" alt=""></span>
+              <span><img data-icon="cardano" src="assets/icons/cardano.svg" alt=""></span>
+            </div>
+            <p><strong>Популярные активы</strong><span>в одном интерфейсе</span></p>
+          </div>
+        </div>
+        <div class="hero__visual" role="img" aria-label="Экран приложения Cardi и платёжная карта" data-enter-media>
+          <div class="orb orb--mint"></div>
+          <div class="crypto-orbit" aria-hidden="true">
+            <span class="crypto-orbit__item crypto-orbit__item--btc"><img data-icon="bitcoin" src="assets/icons/bitcoin.svg" alt=""></span>
+            <span class="crypto-orbit__item crypto-orbit__item--eth"><img data-icon="ethereum" src="assets/icons/ethereum.svg" alt=""></span>
+            <span class="crypto-orbit__item crypto-orbit__item--usdt"><img data-icon="si:tether" src="assets/icons/tether.svg" alt=""></span>
+            <span class="crypto-orbit__item crypto-orbit__item--sol"><img data-icon="si:solana" src="assets/icons/solana.svg" alt=""></span>
+          </div>
+          <button class="motion-toggle" type="button" aria-label="Приостановить декоративные анимации" aria-pressed="false" data-motion-toggle>
+            <span aria-hidden="true"></span>
+          </button>
+          <div class="card-visual" aria-hidden="true">
+            <span class="card-visual__chip"></span>
+            <span class="card-visual__name">Cardi</span>
+            <span class="card-visual__digits">•••• 2408</span>
+          </div>
+          <div class="phone phone--hero" aria-hidden="true">
+            <div class="phone__notch"></div>
+            <div class="app-screen app-screen--home">
+              <div class="app-top"><span class="app-avatar">C</span><strong>Cardi</strong><span class="app-icon"></span></div>
+              <div class="account-mini"><span>Счёт для трат</span><b>284 600 ₽</b></div>
+              <p class="app-label">Основное хранилище</p>
+              <p class="app-balance">1 284 600 ₽</p>
+              <div class="app-actions"><span>+</span><span>↗</span><span>⇄</span></div>
+              <div class="asset-card"><img class="coin-logo" data-icon="bitcoin" src="assets/icons/bitcoin.svg" alt=""><span>Bitcoin</span><b>0,148 BTC</b></div>
+              <div class="asset-card"><img class="coin-logo" data-icon="ethereum" src="assets/icons/ethereum.svg" alt=""><span>Ethereum</span><b>2,84 ETH</b></div>
+              <div class="asset-card"><img class="coin-logo" data-icon="si:tether" src="assets/icons/tether.svg" alt=""><span>Tether</span><b>4 250 USDT</b></div>
+              <div class="app-tabs"><span class="active">Главная</span><span>Карта</span><span>История</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="product" data-progress-section>
+      <div class="manifesto__sticky wrap">
+        <p data-word-highlight>Cardi разделяет хранение и траты. Вы решаете, какая сумма остаётся под вашим контролем, а какая доступна для оплаты.</p>
+        <div class="manifesto__flow" aria-label="Путь средств в Cardi">
+          <span><b>Хранилище</b><small>ваши активы</small></span>
+          <i aria-hidden="true"></i>
+          <span><b>Счёт Cardi</b><small>нужная сумма</small></span>
+          <i aria-hidden="true"></i>
+          <span><b>Карта</b><small>ежедневная оплата</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="story story--vault" data-story="vault" aria-labelledby="vault-title">
+      <div class="story__sticky">
+        <div class="story__giant" aria-hidden="true">ХРАНИТЕ<br>ВСЁ</div>
+        <div class="story__blob" aria-hidden="true"></div>
+        <div class="wrap story__stage">
+          <div class="story__head">
+            <span>Хранение активов</span>
+            <h2 id="vault-title">Хранилище Cardi</h2>
+          </div>
+          <div class="phone phone--scene phone--vault" aria-hidden="true">
+            <div class="phone__notch"></div>
+            <div class="app-screen app-screen--vault">
+              <div class="app-top"><span class="app-avatar">C</span><strong>Cardi</strong><span class="app-icon"></span></div>
+              <p class="app-label">Основное хранилище</p>
+              <p class="app-balance">1 284 600 ₽</p>
+              <div class="app-actions"><span>+</span><span>↗</span><span>⇄</span></div>
+              <p class="app-label app-label--section">Ваши хранилища</p>
+              <div class="vault-row"><span><i class="dot dot--mint"></i>Основное</span><b>824 100 ₽</b></div>
+              <div class="vault-row"><span><i class="dot dot--pink"></i>Накопления</span><b>380 500 ₽</b></div>
+              <div class="vault-row"><span><i class="dot dot--gold"></i>Работа</span><b>80 000 ₽</b></div>
+              <button class="app-button" type="button" tabindex="-1">Создать хранилище</button>
+            </div>
+          </div>
+          <div class="story__notes">
+            <article data-step="0"><h3>Ваши ключи</h3><p>Только вы открываете хранилище. Cardi не хранит копию ключей.</p></article>
+            <article data-step="1"><h3>Ваши активы</h3><p>Отдельные хранилища помогают разделить накопления, работу и ежедневные деньги.</p></article>
+            <article data-step="2"><h3>Ваше восстановление</h3><p>Доступ восстанавливается после проверки личности, без бумажной seed-фразы.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story story--spend" data-story="spend" aria-labelledby="spend-title">
+      <div class="story__sticky">
+        <div class="story__giant" aria-hidden="true">ПЛАТИТЕ<br>ВЕЗДЕ</div>
+        <div class="story__blob story__blob--pink" aria-hidden="true"></div>
+        <div class="wrap story__stage">
+          <div class="story__head">
+            <span>Повседневные платежи</span>
+            <h2 id="spend-title">Счёт Cardi</h2>
+          </div>
+          <div class="card-visual card-visual--scene" aria-hidden="true">
+            <span class="card-visual__chip"></span><span class="card-visual__name">Cardi</span><span class="card-visual__digits">•••• 2408</span>
+          </div>
+          <div class="phone phone--scene phone--spend" aria-hidden="true">
+            <div class="phone__notch"></div>
+            <div class="app-screen app-screen--spend">
+              <div class="app-top"><span class="app-avatar">C</span><strong>Cardi</strong><span class="app-icon"></span></div>
+              <div class="account-mini"><span>Основное хранилище</span><b>1 000 000 ₽</b></div>
+              <p class="app-label">Счёт для трат</p>
+              <p class="app-balance">284 600 ₽</p>
+              <div class="app-actions"><span>+</span><span>↗</span><span>⇄</span></div>
+              <div class="cashback"><span>Кэшбэк за месяц</span><b>2 860 ₽</b></div>
+              <p class="app-label app-label--section">Последние операции</p>
+              <div class="transaction"><span>Кофейня</span><b>− 480 ₽</b></div>
+              <div class="transaction"><span>Такси</span><b>− 760 ₽</b></div>
+              <div class="transaction"><span>Подписка</span><b>− 399 ₽</b></div>
+              <div class="app-tabs"><span class="active">Главная</span><span>Карта</span><span>История</span></div>
+            </div>
+          </div>
+          <div class="story__notes">
+            <article data-step="0"><h3>Счёт на каждый день</h3><p>Переводите нужную сумму из хранилища и тратьте её сразу.</p></article>
+            <article data-step="1"><h3>Одна проверка</h3><p>После подтверждения личности доступны счёт, карта и мобильные платежи.</p></article>
+            <article data-step="2"><h3>Карта в телефоне</h3><p>Добавьте виртуальную карту в мобильный кошелёк и оплачивайте покупки касанием.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="why" aria-labelledby="why-title">
+      <div class="wrap">
+        <h2 id="why-title">Почему выбирают Cardi</h2>
+        <div class="benefits__grid">
+          <article class="benefit benefit--ownership">
+            <div class="benefit__visual" aria-hidden="true"><span class="lock-ring"></span><span class="lock-core"></span></div>
+            <h3>Деньги остаются вашими</h3>
+            <p>Ключи от хранилища есть только у вас. Сервис не может переместить активы без подтверждения.</p>
+          </article>
+          <article class="benefit benefit--pay">
+            <div class="benefit__visual" aria-hidden="true"><div class="mini-card">Cardi</div><span class="pay-wave"></span></div>
+            <h3>Оплата работает сразу</h3>
+            <p>Виртуальная карта и мобильный кошелёк доступны после проверки личности.</p>
+          </article>
+          <article class="benefit benefit--networks">
+            <div class="benefit__visual network-visual" aria-hidden="true">
+              <span><img data-icon="bitcoin" src="assets/icons/bitcoin.svg" alt=""></span>
+              <span><img data-icon="ethereum" src="assets/icons/ethereum.svg" alt=""></span>
+              <span><img data-icon="si:tether" src="assets/icons/tether.svg" alt=""></span>
+              <span><img data-icon="si:solana" src="assets/icons/solana.svg" alt=""></span>
+              <span><img data-icon="cardano" src="assets/icons/cardano.svg" alt=""></span>
+            </div>
+            <h3>Сети не мешают</h3>
+            <p>Один баланс для каждого актива, переводы между поддерживаемыми сетями внутри приложения.</p>
+          </article>
+          <article class="benefit benefit--control">
+            <div class="benefit__visual control-visual" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <h3>Лимиты под контролем</h3>
+            <p>Заморозьте карту, измените лимит и выберите основной актив для оплаты.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="technology" id="technology" data-tech-section aria-labelledby="tech-title">
+      <div class="technology__sticky wrap">
+        <h2 id="tech-title">Как устроен Cardi</h2>
+        <div class="tech-rail" data-tech-rail>
+          <article><span class="tech-symbol"><img data-icon="ethereum" src="assets/icons/ethereum.svg" alt="Логотип Ethereum"></span><h3>Разделённые ключи</h3><p>Части ключа хранятся отдельно. Одной точки отказа нет.</p></article>
+          <article><span class="tech-symbol"><img data-icon="si:tether" src="assets/icons/tether.svg" alt="Логотип Tether"></span><h3>Виртуальная карта</h3><p>Карта выпускается в приложении и добавляется в мобильный кошелёк.</p></article>
+          <article><span class="tech-symbol"><img data-icon="bitcoin" src="assets/icons/bitcoin.svg" alt="Логотип Bitcoin"></span><h3>Новый адрес</h3><p>Для каждого пополнения Bitcoin создаётся отдельный адрес.</p></article>
+          <article><span class="tech-symbol"><img data-icon="si:solana" src="assets/icons/solana.svg" alt="Логотип Solana"></span><h3>Два счёта</h3><p>Хранилище отвечает за владение, счёт Cardi за ежедневные платежи.</p></article>
+          <article><span class="tech-symbol"><img data-icon="cardano" src="assets/icons/cardano.svg" alt="Логотип Cardano"></span><h3>Переводы между сетями</h3><p>Активы перемещаются между поддерживаемыми сетями внутри одного интерфейса.</p></article>
+          <article><span class="tech-symbol"><img data-icon="ethereum" src="assets/icons/ethereum.svg" alt="Логотип Ethereum"></span><h3>Комиссия в активе</h3><p>Сетевую комиссию можно оплатить поддерживаемым активом.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="closing" id="join">
+    <div class="wrap closing__top">
+      <div>
+        <h2>Попробуйте концепт Cardi</h2>
+        <p>Оставьте почту, чтобы увидеть сценарий заявки. Данные не отправляются.</p>
+      </div>
+      <form class="lead-form lead-form--footer" data-demo-form novalidate>
+        <label class="sr-only" for="footer-email">Электронная почта</label>
+        <input id="footer-email" name="email" type="email" autocomplete="email" placeholder="Ваша почта" required aria-describedby="footer-email-error">
+        <button type="submit">Оставить заявку</button>
+        <span class="field-error" id="footer-email-error"></span>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="wrap footer__row">
+      <a class="brand brand--footer" href="#top">Cardi</a>
+      <nav aria-label="Навигация в подвале"><a href="#product">Продукт</a><a href="#why">Почему Cardi</a><a href="#technology">Технологии</a></nav>
+      <p>Демонстрационный проект, финансовые услуги не предоставляются. Названия и логотипы продуктов принадлежат их владельцам.</p>
+      <p class="footer__credit">Разработка сайта <a href="https://t.me/dikasaru" target="_blank" rel="noopener noreferrer">@dikasaru</a> (Telegram)</p>
+    </div>
+    <div class="footer__word" aria-hidden="true">Cardi</div>
+  </footer>
+
+  <div class="demo-toast" role="status" aria-live="assertive" aria-hidden="true" data-demo-toast>
+    <button type="button" aria-label="Закрыть уведомление" data-toast-close>×</button>
+    <strong>Это демо-версия</strong>
+    <p>Заявка никуда не отправлена, адрес электронной почты не сохранён.</p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ddddd5">
+  <meta name="description" content="Личный список аниме, оценок и статусов просмотра.">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <title>Лист просмотренных аниме | dikasaru</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="window">
+  <header class="top">
+    <div class="window-heading">
+      <span class="window-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM14 3v5h5M8 12h8m-8 4h8"/></svg></span>
+      <h1>Лист просмотренных аниме</h1>
+      <span id="wordmark" class="wordmark" aria-label="dikasaru">dikasaru</span>
+    </div>
+    <div class="frame top-inner">
+      <div class="search-area">
+        <button class="search-trigger" type="button" id="search-toggle" aria-expanded="false" aria-controls="search-panel">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4.5 4.5"/></svg>
+          Поиск
+          <kbd aria-hidden="true">/</kbd>
+        </button>
+        <button class="search-plus" type="button" id="search-plus" aria-label="Найти и добавить аниме" aria-controls="search-panel" aria-expanded="false">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <section class="search-panel" id="search-panel" aria-label="Поиск аниме" hidden>
+          <div class="search-bar">
+            <label class="sr-only" for="query">Название аниме</label>
+            <input id="query" type="search" maxlength="150" placeholder="Название аниме" autocomplete="off" spellcheck="false" aria-describedby="search-hint">
+            <button type="button" id="close-search" class="square" aria-label="Закрыть поиск">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+            </button>
+          </div>
+          <p class="hint" id="search-hint" role="status">По-русски, по-английски или ромадзи</p>
+          <ul id="results" aria-label="Результаты поиска"></ul>
+        </section>
+      </div>
+    </div>
+  </header>
+  <main class="frame">
+    <div class="list-header">
+      <div class="heading">
+        <h2>Мой список</h2>
+        <span class="count" id="count" aria-label="Тайтлов в списке">00</span>
+      </div>
+      <nav id="filters" aria-label="Фильтр по статусу">
+        <button type="button" data-filter="all" aria-pressed="true">Все</button>
+        <button type="button" data-filter="watched" aria-pressed="false">Посмотрел</button>
+        <button type="button" data-filter="watching" aria-pressed="false">Смотрю</button>
+        <button type="button" data-filter="dropped" aria-pressed="false">Забросил</button>
+        <button type="button" data-filter="planned" aria-pressed="false">Планирую</button>
+      </nav>
+    </div>
+    <div class="empty" id="empty">
+      <p id="empty-title">Список пока пуст</p>
+      <button type="button" id="empty-search" class="empty-action">Найти аниме <span aria-hidden="true">+</span></button>
+    </div>
+    <div class="columns" id="library" aria-label="Список аниме"></div>
+    <p id="storage-warning" class="storage-warning" role="alert" hidden>Браузер не сохранил изменения. Проверьте настройки хранения данных.</p>
+  </main>
+  <footer class="statusbar">
+    <p id="export-feedback" role="status"></p>
+    <button class="export-trigger" type="button" id="export-toggle" popovertarget="export-menu" aria-controls="export-menu" aria-expanded="false">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></svg>
+      Экспорт списка
+    </button>
+  </footer>
+  </div>
+  <div id="export-menu" class="row-menu export-menu" popover>
+    <h2>Экспорт всего списка</h2>
+    <p id="export-empty" hidden>Список пока пуст</p>
+    <button type="button" data-export="png">Скачать снимок PNG</button>
+    <button type="button" data-export="copy">Скопировать текст</button>
+    <button type="button" data-export="txt">Скачать TXT по статусам</button>
+  </div>
+  <dialog id="copy-dialog" aria-labelledby="copy-title">
+    <form method="dialog">
+      <label id="copy-title" for="copy-value">Скопируйте выделенный список</label>
+      <textarea id="copy-value" readonly rows="8"></textarea>
+      <button>Закрыть</button>
+    </form>
+  </dialog>
+  <div id="row-menu" class="row-menu" popover></div>
+  <div id="announcement" class="sr-only" role="status"></div>
+</body>
+</html>
+
+

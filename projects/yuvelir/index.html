@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru" data-type="product">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17181a">
+  <meta name="page-type" content="product">
+  <meta name="site-kind" content="shop">
+  <meta name="description" content="VORN. Коллекция серебряных колец и подвесок. Дизайн-концепт ювелирной мастерской.">
+  <title>VORN | Серебряные кольца и подвески</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="shop.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#collection">К коллекции</a>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="bag" viewBox="0 0 24 24"><path d="M5 8h14l2 13H3L5 8Z M8.5 10V6a3.5 3.5 0 0 1 7 0v4"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 2 8 4v5c0 4.5-3.2 8.7-8 11-4.8-2.3-8-6.5-8-11V6l8-4Z M8 12l2.5 2.5L16 9"/></symbol>
+    <symbol id="facet" viewBox="0 0 24 24"><path d="M2 9l5-5h10l5 5-10 12L2 9Zm0 0h20M7 4l5 17 5-17"/></symbol>
+    <symbol id="tool" viewBox="0 0 24 24"><path d="m10 5 4-3 7 7-3 4-8-8Zm4 4L4 19l1 2 2 1 10-10M6 6l2 2m-4 3h3"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  </svg>
+  <div class="frame" id="top">
+    <header class="header">
+      <a class="brand" href="#top" aria-label="VORN, наверх"><img src="assets/mark.svg" alt="" width="34" height="43"><span>VORN</span></a>
+      <nav aria-label="Основная навигация">
+        <a href="#collection">Коллекция</a><a href="#silver">Материалы</a><a href="#atelier">Мастерская</a>
+      </nav>
+      <button class="bag-button" type="button" data-open-cart aria-haspopup="dialog"><svg class="icon" aria-hidden="true"><use href="#bag"/></svg><span class="bag-label">Корзина</span><span class="count" id="cart-count">0</span></button>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-main">
+          <img class="hero-photo" src="assets/hero.jpg" alt="Серебряная печатка с чёрным ониксом на тёмном сланце" fetchpriority="high">
+          <div class="hero-copy">
+            <h1 id="hero-title">Серебро<br>с характером</h1>
+            <p>Кольца и подвески из серебра 925 пробы с глубоким рельефом и тёмной патиной.</p>
+            <a class="outline" href="#collection">Смотреть коллекцию</a>
+          </div>
+        </div>
+        <aside class="spec" id="silver" aria-labelledby="silver-title">
+          <h2 id="silver-title">О материале</h2>
+          <div class="spec-item"><span class="element" aria-hidden="true"><small>47</small>Ag</span><div><h3>Серебро 925</h3><p>92,5% чистого серебра в сплаве.</p></div></div>
+          <div class="spec-item"><svg class="icon" aria-hidden="true"><use href="#shield"/></svg><div><h3>Чернение</h3><p>Патина подчёркивает углубления рисунка.</p></div></div>
+          <div class="spec-item"><svg class="icon" aria-hidden="true"><use href="#facet"/></svg><div><h3>Чёрный оникс</h3><p>Гладкий камень в контрасте с рельефом.</p></div></div>
+          <div class="spec-item"><svg class="icon" aria-hidden="true"><use href="#tool"/></svg><div><h3>Ручная доводка</h3><p>Полировка кромок и выступающих деталей.</p></div></div>
+        </aside>
+      </section>
+      <section class="catalog" id="collection" aria-label="Коллекция украшений">
+        <div class="catalog-bar">
+          <div class="filters" role="group" aria-label="Тип украшения">
+            <button type="button" data-filter="all" aria-pressed="true">Все украшения</button>
+            <button type="button" data-filter="signet" aria-pressed="false">Печатки</button>
+            <button type="button" data-filter="band" aria-pressed="false">Кольца</button>
+            <button type="button" data-filter="pendant" aria-pressed="false">Подвески</button>
+          </div>
+          <label class="sort"><span>Сортировка</span><select id="sort" aria-label="Сортировка коллекции"><option value="featured">По коллекции</option><option value="low">Сначала дешевле</option><option value="high">Сначала дороже</option></select></label>
+        </div>
+        <div class="products">
+          <article class="product" data-id="onyx" data-type="signet" data-price="12900"><div class="product-photo"><img src="assets/onyx.jpg" alt="Серебряная печатка с овальным чёрным ониксом" width="384" height="384"></div><div class="product-info"><div><h3>Onyx</h3><p>12 900 ₽</p></div><button type="button" class="add" data-add aria-label="Добавить Onyx в корзину"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></div></article>
+          <article class="product" data-id="lily" data-type="signet" data-price="11500"><div class="product-photo"><img src="assets/lily.jpg" alt="Печатка с рельефной геральдической лилией" width="384" height="384"></div><div class="product-info"><div><h3>Iron Lily</h3><p>11 500 ₽</p></div><button type="button" class="add" data-add aria-label="Добавить Iron Lily в корзину"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></div></article>
+          <article class="product" data-id="knot" data-type="band" data-price="8900"><div class="product-photo"><img src="assets/knot.jpg" alt="Широкое кольцо с плетёным орнаментом" width="384" height="384"></div><div class="product-info"><div><h3>Oath</h3><p>8 900 ₽</p></div><button type="button" class="add" data-add aria-label="Добавить Oath в корзину"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></div></article>
+          <article class="product" data-id="lion" data-type="signet" data-price="14500"><div class="product-photo"><img src="assets/lion.jpg" alt="Серебряная печатка в форме головы льва" width="384" height="384"></div><div class="product-info"><div><h3>Regent</h3><p>14 500 ₽</p></div><button type="button" class="add" data-add aria-label="Добавить Regent в корзину"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></div></article>
+          <article class="product" data-id="ore" data-type="band" data-price="7900"><div class="product-photo"><img src="assets/ore.jpg" alt="Широкое серебряное кольцо с фактурой ковки" width="384" height="384" loading="lazy"></div><div class="product-info"><div><h3>Ore</h3><p>7 900 ₽</p></div><button type="button" class="add" data-add aria-label="Добавить Ore в корзину"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></div></article>
+          <article class="product" data-id="chain" data-type="band" data-price="9600"><div class="product-photo"><img src="assets/chain.jpg" alt="Кольцо в форме крупных переплетённых звеньев" width="384" height="384" loading="lazy"></div><div class="product-info"><div><h3>Link</h3><p>9 600 ₽</p></div><button type="button" class="add" data-add aria-label="Добавить Link в корзину"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></div></article>
+          <article class="product" data-id="relic" data-type="pendant" data-price="10900"><div class="product-photo"><img src="assets/relic.jpg" alt="Овальная подвеска с чёрным ониксом в серебряной оправе" width="384" height="512" loading="lazy"></div><div class="product-info"><div><h3>Relic</h3><p>10 900 ₽</p></div><button type="button" class="add" data-add aria-label="Добавить Relic в корзину"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></div></article>
+          <article class="product" data-id="thorn" data-type="pendant" data-price="9900"><div class="product-photo"><img src="assets/thorn.jpg" alt="Серебряный крест с переплетёнными шипами" width="384" height="512" loading="lazy"></div><div class="product-info"><div><h3>Thorn</h3><p>9 900 ₽</p></div><button type="button" class="add" data-add aria-label="Добавить Thorn в корзину"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></div></article>
+        </div>
+        <div class="catalog-end"><button class="outline" type="button" data-open-cart>Открыть корзину</button></div>
+      </section>
+      <section class="atelier" id="atelier" aria-labelledby="atelier-title">
+        <img src="assets/atelier.jpg" alt="Серебряная печатка с рельефом льва на рабочей поверхности ювелира" loading="lazy">
+        <div class="atelier-copy">
+          <h2 id="atelier-title">От эскиза<br>до металла</h2>
+          <p>Сначала рисунок вырезают на восковой модели. После литья серебро чернят и полируют выступающие детали, чтобы свет подчёркивал рельеф.</p>
+          <a href="#silver" class="outline">О материале</a>
+        </div>
+      </section>
+      <div class="details" aria-label="Детали коллекции">
+        <div><span class="element" aria-hidden="true"><small>47</small>Ag</span><span>Серебро 925</span></div>
+        <div><svg class="icon" aria-hidden="true"><use href="#shield"/></svg><span>Тёмная патина</span></div>
+        <div><svg class="icon" aria-hidden="true"><use href="#facet"/></svg><span>Чёрный оникс</span></div>
+        <div><svg class="icon" aria-hidden="true"><use href="#tool"/></svg><span>Ручная полировка</span></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="brand" href="#top" aria-label="VORN, наверх"><img src="assets/mark.svg" alt="" width="28" height="36"><span>VORN</span></a>
+      <p>Концепт ювелирной мастерской для портфолио.</p>
+      <a class="back" href="#top">Наверх</a>
+    </footer>
+  </div>
+  <dialog id="cart" class="cart" aria-labelledby="cart-title">
+    <div class="cart-head"><h2 id="cart-title">Корзина</h2><form method="dialog"><button class="square" type="submit" aria-label="Закрыть корзину" autofocus><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></form></div>
+    <div class="cart-content" id="cart-content"></div>
+    <div class="cart-foot">
+      <div class="total"><span>Итого</span><strong id="cart-total">0 ₽</strong></div>
+      <button id="checkout" type="button" class="checkout">Оплатить</button>
+      <p id="checkout-note" role="status"></p>
+    </div>
+  </dialog>
+  <p class="toast" id="toast" role="status"></p>
+</body>
+</html>
